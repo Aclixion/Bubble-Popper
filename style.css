@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #add5ed;
+    font-family: "Open Sans", "Helvetica", sans-serif;
+
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-section {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.control-section {
+    text-align: center;
+}
+
+.bubble {
+    width: 30px;
+    height: 30px;
+    background-color: #c3daeb;
+    box-shadow: 0 2px #9baebd;
+    border: none;
+    border-radius: 50%;
+    transition: box-shadow 0.5s;
+}
+
+.bubble:hover {
+    box-shadow: none;
+}
+
+.bubble.popped {
+    background-color: #7b8892;
+    box-shadow: 0 3px #57636c;
+}
+
+.play-btn {
+    font-size: 3em;
+    font-family: inherit;
+    padding: 10px 40px;
+    border: none;
+    color: #77848f;
+    background-color: #99cfff;
+    box-shadow: 3px 0 #76a1c6;
+    border-radius: 50px;
+    transition: box-shadow 0.5s;
+    margin: auto;
+}
+
+.play-btn.disabled {
+    background-color: #465b6d;
+    color: #353c41;
+}
+
+.play-btn:hover {
+    cursor: pointer;
+    box-shadow: none;
+}
